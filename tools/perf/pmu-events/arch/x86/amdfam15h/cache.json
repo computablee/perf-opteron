@@ -1,0 +1,86 @@
+[
+  {
+    "EventName": "ic_fw32",
+    "EventCode": "0x80",
+    "BriefDescription": "The number of 32B fetch windows transferred from IC pipe to DE instruction decoder (includes non-cacheable and cacheable fill responses)."
+  },
+  {
+    "EventName": "ic_fw32_miss",
+    "EventCode": "0x81",
+    "BriefDescription": "The number of 32B fetch windows tried to read the L1 IC and missed in the full tag."
+  },
+  {
+    "EventName": "ic_cache_fill_l2",
+    "EventCode": "0x82",
+    "BriefDescription": "The number of 64 byte instruction cache line was fulfilled from the L2 cache."
+  },
+  {
+    "EventName": "ic_cache_fill_sys",
+    "EventCode": "0x83",
+    "BriefDescription": "The number of 64 byte instruction cache line fulfilled from system memory or another cache."
+  },
+  {
+    "EventName": "bp_l1_tlb_miss_l2_hit",
+    "EventCode": "0x84",
+    "BriefDescription": "The number of instruction fetches that miss in the L1 ITLB but hit in the L2 ITLB."
+  },
+  {
+    "EventName": "bp_l1_tlb_miss_l2_miss",
+    "EventCode": "0x85",
+    "BriefDescription": "The number of instruction fetches that miss in both the L1 and L2 TLBs."
+  },
+  {
+    "EventName": "bp_snp_re_sync",
+    "EventCode": "0x86",
+    "BriefDescription": "The number of pipeline restarts caused by invalidating probes that hit on the instruction stream currently being executed. This would happen if the active instruction stream was being modified by another processor in an MP system - typically a highly unlikely event."
+  },
+  {
+    "EventName": "ic_fetch_stall.ic_stall_any",
+    "EventCode": "0x87",
+    "BriefDescription": "Instruction fetch was stalled this clock cycle for any reason.",
+    "PublicDescription": "The number of cycles the instruction fetcher is stalled for the core. This may be for a variety of reasons such as branch predictor updates, unconditional branch bubbles, far jumps and cache misses, instruction fetching for the other core while instruction fetch for this core is stalled, among others. May be overlapped by instruction dispatch stalls or instruction execution, such that these stalls don't necessarily impact performance."
+  },
+  {
+    "EventName": "ic_cache_inval.smc_hit",
+    "EventCode": "0x8c",
+    "BriefDescription": "SMC invalidating probe that hit on in-flight instructions.",
+    "PublicDescription": "The number of instruction cache lines invalidated. A non-SMC event is CMC (cross modifying code), either from the other core of the compute unit or another compute compute unit.",
+    "UMask": "0x8"
+  },
+  {
+    "EventName": "ic_cache_inval.smc_miss",
+    "EventCode": "0x8c",
+    "BriefDescription": "SMC invalidating probe that missed on in-flight instructions.",
+    "PublicDescription": "The number of instruction cache lines invalidated. A non-SMC event is CMC (cross modifying code), either from the other core of the compute unit or another compute compute unit.",
+    "UMask": "0x4"
+  },
+  {
+    "EventName": "ic_cache_inval.nsmc_hit",
+    "EventCode": "0x8c",
+    "BriefDescription": "Non-SMC invalidating probe that hit on in-flight instructions.",
+    "PublicDescription": "The number of instruction cache lines invalidated. A non-SMC event is CMC (cross modifying code), either from the other core of the compute unit or another compute compute unit.",
+    "UMask": "0x2"
+  },
+  {
+    "EventName": "ic_cache_inval.nsmc_miss",
+    "EventCode": "0x8c",
+    "BriefDescription": "Non-SMC invalidating probe that missed on in-flight instructions.",
+    "PublicDescription": "The number of instruction cache lines invalidated. A non-SMC event is CMC (cross modifying code), either from the other core of the compute unit or another compute compute unit.",
+    "UMask": "0x1"
+  },
+  {
+    "EventName": "bp_tlb_rel",
+    "EventCode": "0x99",
+    "BriefDescription": "The number of ITLB reload requests."
+  },
+  {
+    "EventName": "bp_tlb_rel_ab",
+    "EventCode": "0x9a",
+    "BriefDescription": "The number of ITLB reloads aborted."
+  },
+  {
+    "EventName": "l2_refills",
+    "EventCode": "0x82",
+    "BriefDescription": "The number of instruction cache refills satisfied from the L2 cache. Each increment represents one 64-byte cache line transfer."
+  }
+]

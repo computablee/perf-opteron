@@ -1,0 +1,96 @@
+[
+  {
+    "EventName": "ls_l1_d_tlb_miss.all",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Miss or Reload off all sizes.",
+    "PublicDescription": "L1 DTLB Miss or Reload off all sizes.",
+    "UMask": "0xff"
+  },
+  {
+    "EventName": "ls_l1_d_tlb_miss.tlb_reload_1g_l2_miss",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Miss of a page of 1G size.",
+    "PublicDescription": "L1 DTLB Miss of a page of 1G size.",
+    "UMask": "0x40"
+  },
+  {
+    "EventName": "ls_l1_d_tlb_miss.tlb_reload_2m_l2_miss",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Miss of a page of 2M size.",
+    "PublicDescription": "L1 DTLB Miss of a page of 2M size.",
+    "UMask": "0x20"
+  },
+  {
+    "EventName": "ls_l1_d_tlb_miss.tlb_reload_4k_l2_miss",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Miss of a page of 4K size.",
+    "PublicDescription": "L1 DTLB Miss of a page of 4K size.",
+    "UMask": "0x10"
+  },
+  {
+    "EventName": "ls_l1_d_tlb_miss.tlb_reload_1g_l2_hit",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Reload of a page of 1G size.",
+    "PublicDescription": "L1 DTLB Reload of a page of 1G size.",
+    "UMask": "0x4"
+  },
+  {
+    "EventName": "ls_l1_d_tlb_miss.tlb_reload_2m_l2_hit",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Reload of a page of 2M size.",
+    "PublicDescription": "L1 DTLB Reload of a page of 2M size.",
+    "UMask": "0x2"
+  },
+  {
+    "EventName": "ls_l1_d_tlb_miss.tlb_reload_4k_l2_hit",
+    "EventCode": "0x45",
+    "BriefDescription": "L1 DTLB Reload of a page of 4K size.",
+    "PublicDescription": "L1 DTLB Reload of a page of 4K size.",
+    "UMask": "0x1"
+  },
+  {
+    "EventName": "ls_misal_accesses",
+    "EventCode": "0x47",
+    "BriefDescription": "Misaligned loads."
+  },
+  {
+    "EventName": "ls_pref_instr_disp.prefetch_nta",
+    "EventCode": "0x4b",
+    "BriefDescription": "Software Prefetch Instructions (PREFETCHNTA instruction) Dispatched.",
+    "PublicDescription": "Software Prefetch Instructions (PREFETCHNTA instruction) Dispatched.",
+    "UMask": "0x4"
+  },
+  {
+    "EventName": "ls_pref_instr_disp.store_prefetch_w",
+    "EventCode": "0x4b",
+    "BriefDescription": "Software Prefetch Instructions (3DNow PREFETCHW instruction) Dispatched.",
+    "PublicDescription": "Software Prefetch Instructions (3DNow PREFETCHW instruction) Dispatched.",
+    "UMask": "0x2"
+  },
+  {
+    "EventName": "ls_pref_instr_disp.load_prefetch_w",
+    "EventCode": "0x4b",
+    "BriefDescription": "Prefetch, Prefetch_T0_T1_T2.",
+    "PublicDescription": "Software Prefetch Instructions Dispatched. Prefetch, Prefetch_T0_T1_T2.",
+    "UMask": "0x1"
+  },
+  {
+    "EventName": "ls_inef_sw_pref.hit_l2",
+    "EventCode": "0x52",
+    "BriefDescription": "The number of software prefetches that did not fetch data outside of the processor core.",
+    "PublicDescription": "The number of software prefetches that did not fetch data outside of the processor core.",
+    "UMask": "0x8"
+  },
+  {
+    "EventName": "ls_inef_sw_pref.hit_l1",
+    "EventCode": "0x52",
+    "BriefDescription": "The number of software prefetches that did not fetch data outside of the processor core.",
+    "PublicDescription": "The number of software prefetches that did not fetch data outside of the processor core.",
+    "UMask": "0x1"
+  },
+  {
+    "EventName": "ls_not_halted_cyc",
+    "EventCode": "0x76",
+    "BriefDescription": "Cycles not in Halt."
+  }
+]
