@@ -10,3 +10,6 @@ A version of Linux Perf that has support for Opteron hardware counters.
 
 ## License
 I offer this software free of charge with no warranty with whatever requirements are specified by Lord Linus Torvalds.
+
+## Future Work
+Add more counters I guess, the list is not exhaustive right now.
